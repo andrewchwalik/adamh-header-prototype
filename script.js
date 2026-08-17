@@ -36,7 +36,9 @@ range.addEventListener("input", (event) => {
 });
 
 divider.addEventListener("pointerdown", (event) => {
+  event.preventDefault();
   isDragging = true;
+  document.body.classList.add("is-comparing");
   divider.setPointerCapture(event.pointerId);
   scheduleSplitFromPointer(event.clientX);
 });
@@ -46,11 +48,13 @@ window.addEventListener("pointermove", (event) => {
     return;
   }
 
+  event.preventDefault();
   scheduleSplitFromPointer(event.clientX);
 });
 
 window.addEventListener("pointerup", (event) => {
   isDragging = false;
+  document.body.classList.remove("is-comparing");
   if (divider.hasPointerCapture(event.pointerId)) {
     divider.releasePointerCapture(event.pointerId);
   }
@@ -58,6 +62,7 @@ window.addEventListener("pointerup", (event) => {
 
 window.addEventListener("pointercancel", (event) => {
   isDragging = false;
+  document.body.classList.remove("is-comparing");
   if (divider.hasPointerCapture(event.pointerId)) {
     divider.releasePointerCapture(event.pointerId);
   }
