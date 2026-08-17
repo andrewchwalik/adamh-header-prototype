@@ -304,10 +304,11 @@ h1 {
 
 .divider-handle {
   position: relative;
-  display: grid;
+  display: flex;
   flex: 0 0 42px;
   align-items: center;
   justify-content: center;
+  gap: 6px;
   width: 42px;
   height: 42px;
   border: 1px solid rgba(255, 255, 255, 0.72);
@@ -318,16 +319,20 @@ h1 {
 }
 
 .divider-handle span {
-  grid-area: 1 / 1;
-  width: 16px;
-  height: 2px;
-  border: 0;
+  width: 8px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
   border-radius: 999px;
-  background: #fff;
+  background: transparent;
+}
+
+.divider-handle span:first-child {
+  transform: rotate(135deg);
 }
 
 .divider-handle span:last-child {
-  transform: rotate(90deg);
+  transform: rotate(-45deg);
 }
 
 @media (max-width: 980px) {
