@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ADAMH Header Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <section class="hero" aria-label="Crawford-Marion ADAMH community header">
+        <div class="hero-media" data-compare>
+          <img
+            class="compare-image compare-image-after"
+            src="./assets/crawford-aerial.jpeg"
+            alt="Aerial view of downtown Crawford County"
+            draggable="false"
+          />
+          <div class="compare-before" data-before>
+            <img
+              class="compare-image"
+              src="./assets/bucyrus-ohio.jpg"
+              alt="Aerial view of Bucyrus public square"
+              draggable="false"
+            />
+          </div>
+          <div class="hero-vignette" aria-hidden="true"></div>
+          <input
+            class="compare-range"
+            data-range
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Drag to compare Crawford and Marion area images"
+          />
+          <div class="compare-divider" data-divider aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-handle">
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+
+          <header class="site-header" aria-label="Main navigation">
+            <nav class="nav-cluster nav-cluster-left" aria-label="Primary left navigation">
+              <a href="#">Home</a>
+              <a href="#">Paths to Help</a>
+              <a href="#">Prevention</a>
+            </nav>
+
+            <a class="brand-mark" href="#" aria-label="Crawford-Marion ADAMH home">
+              <img src="./assets/adamh-logo.webp" alt="ADAMH" />
+            </a>
+
+            <nav class="nav-cluster nav-cluster-right" aria-label="Primary right navigation">
+              <a href="#">News</a>
+              <a href="#">Resources</a>
+              <a href="#">About Us</a>
+              <a class="nav-cta" href="#">Find Help Now</a>
+            </nav>
+
+            <button class="mobile-menu" type="button" aria-label="Open navigation">
+              <span></span>
+              <span></span>
+            </button>
+          </header>
+
+          <div class="hero-copy">
+            <p class="eyebrow">Crawford-Marion ADAMH</p>
+            <h1>Providing help. Offering hope.</h1>
+            <p>
+              A calmer, more modern first impression for people looking for care,
+              prevention resources, and local support.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-action" href="#">Find Help Now</a>
+              <a class="secondary-action" href="#">Explore Resources</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
