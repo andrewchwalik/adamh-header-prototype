@@ -271,16 +271,13 @@ h1 {
 
 .compare-range {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  z-index: 6;
-  width: 72px;
-  height: 100%;
-  margin: 0;
-  cursor: ew-resize;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   opacity: 0;
-  transform: translateX(-50%);
+  pointer-events: none;
 }
 
 .compare-divider {
@@ -288,11 +285,17 @@ h1 {
   top: 0;
   bottom: 0;
   left: 50%;
-  z-index: 3;
+  z-index: 6;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 0;
+  width: 72px;
+  cursor: ew-resize;
+  touch-action: none;
+  transform: translateX(-50%);
+}
+
+.compare-divider * {
   pointer-events: none;
 }
 
