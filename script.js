@@ -7,6 +7,7 @@ function setSplit(value) {
   const clamped = Math.min(92, Math.max(8, Number(value)));
   before.style.width = `${clamped}%`;
   divider.style.left = `${clamped}%`;
+  range.style.left = `${clamped}%`;
 }
 
 range.addEventListener("input", (event) => {
