@@ -108,7 +108,7 @@ a {
   position: absolute;
   top: 22px;
   left: 50%;
-  z-index: 5;
+  z-index: 7;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
@@ -302,7 +302,7 @@ h1 {
   top: 0;
   bottom: 0;
   left: var(--split);
-  z-index: 6;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
