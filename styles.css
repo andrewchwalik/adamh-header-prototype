@@ -38,6 +38,7 @@ a {
 }
 
 .hero-media {
+  --split: 50%;
   position: relative;
   min-height: calc(100vh - 44px);
   overflow: hidden;
@@ -65,15 +66,15 @@ a {
 
 .compare-before {
   position: absolute;
-  inset: 0 auto 0 0;
-  width: 50%;
+  inset: 0;
   overflow: hidden;
   z-index: 1;
+  clip-path: inset(0 calc(100% - var(--split)) 0 0);
+  transform: translateZ(0);
+  will-change: clip-path;
 }
 
 .compare-before .compare-image {
-  width: calc(100vw - 44px);
-  max-width: none;
   filter: saturate(1.04) contrast(1.04);
 }
 
@@ -284,7 +285,7 @@ h1 {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: var(--split);
   z-index: 6;
   display: flex;
   align-items: center;
@@ -293,6 +294,7 @@ h1 {
   cursor: ew-resize;
   touch-action: none;
   transform: translateX(-50%);
+  will-change: left;
 }
 
 .compare-divider * {
