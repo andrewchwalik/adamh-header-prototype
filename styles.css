@@ -225,11 +225,11 @@ a {
 }
 
 .eyebrow {
-  margin: 0 0 14px;
+  margin: 0 0 16px;
   color: var(--adamh-yellow);
-  font-size: 13px;
+  font-size: clamp(15px, 1.45vw, 19px);
   font-weight: 900;
-  letter-spacing: 0;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
@@ -399,7 +399,7 @@ h1 {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(10, minmax(0, 1fr));
   gap: 18px;
   width: min(1240px, 100%);
   margin: 0 auto;
@@ -407,6 +407,7 @@ h1 {
 
 .service-card {
   display: flex;
+  grid-column: span 2;
   min-height: 238px;
   flex-direction: column;
   align-items: flex-start;
@@ -470,6 +471,10 @@ h1 {
 }
 
 .service-card-last {
+  grid-column: span 2;
+}
+
+.service-card:nth-child(6) {
   grid-column: 2 / span 2;
 }
 
@@ -496,7 +501,9 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .service-card-last {
+  .service-card,
+  .service-card-last,
+  .service-card:nth-child(6) {
     grid-column: auto;
   }
 }
