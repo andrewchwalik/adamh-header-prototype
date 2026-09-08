@@ -69,3 +69,7 @@ window.addEventListener("pointercancel", (event) => {
 });
 
 setSplit(range.value);
+
+if (window.lucide) {
+  window.lucide.createIcons();
+}
