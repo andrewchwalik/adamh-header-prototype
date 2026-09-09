@@ -356,7 +356,7 @@ h1 {
 }
 
 .updates {
-  padding: clamp(62px, 7vw, 92px) clamp(24px, 5vw, 84px) clamp(30px, 4vw, 54px);
+  padding: clamp(44px, 5vw, 64px) clamp(24px, 5vw, 84px) clamp(20px, 3vw, 38px);
   background: #fff;
 }
 
@@ -366,17 +366,17 @@ h1 {
   justify-content: space-between;
   gap: 24px;
   width: min(1240px, 100%);
-  margin: 0 auto 30px;
+  margin: 0 auto 22px;
 }
 
 .updates-heading .section-kicker {
-  margin: 0 0 9px;
+  margin: 0 0 6px;
 }
 
 .updates h2 {
   margin: 0;
   color: #10243b;
-  font-size: clamp(30px, 3.4vw, 44px);
+  font-size: clamp(27px, 3vw, 38px);
   line-height: 1;
   letter-spacing: 0;
 }
@@ -409,17 +409,17 @@ h1 {
 .updates-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 18px;
+  gap: 14px;
   width: min(1240px, 100%);
   margin: 0 auto;
 }
 
 .update-card {
   display: flex;
-  min-height: 320px;
+  min-height: 278px;
   flex-direction: column;
-  padding: clamp(26px, 3vw, 38px);
-  border-radius: 14px;
+  padding: clamp(22px, 2.4vw, 30px);
+  border-radius: 10px;
   color: #10243b;
 }
 
@@ -436,9 +436,9 @@ h1 {
 }
 
 .update-type {
-  margin: 0 0 20px;
+  margin: 0 0 14px;
   color: rgba(16, 36, 59, 0.72);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -448,28 +448,28 @@ h1 {
   max-width: 15ch;
   margin: 0;
   color: #07121f;
-  font-size: clamp(24px, 2.4vw, 33px);
+  font-size: clamp(22px, 2vw, 28px);
   line-height: 1.04;
   letter-spacing: 0;
   text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 5px;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
 }
 
 .update-summary {
-  margin: 22px 0 0;
+  margin: 16px 0 0;
   color: #1c334c;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
 }
 
 .meeting-details {
   display: grid;
-  gap: 8px;
-  margin: 24px 0 0;
+  gap: 5px;
+  margin: 16px 0 0;
   color: #12263e;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 1.45;
 }
@@ -482,7 +482,7 @@ h1 {
 .meeting-details div:last-child {
   display: block;
   max-width: 30ch;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .meeting-details dt {
@@ -495,9 +495,9 @@ h1 {
 
 .update-action {
   align-self: flex-start;
-  min-height: 42px;
+  min-height: 38px;
   margin-top: auto;
-  padding: 0 16px;
+  padding: 0 14px;
   border-radius: 999px;
   background: var(--adamh-blue);
   color: #fff;
@@ -700,7 +700,7 @@ h1 {
   }
 
   .updates {
-    padding: 58px 20px 24px;
+    padding: 48px 20px 20px;
   }
 
   .updates-heading {
@@ -717,8 +717,8 @@ h1 {
   .update-card,
   .update-card-hiring {
     grid-column: auto;
-    min-height: 286px;
-    padding: 26px;
+    min-height: 258px;
+    padding: 22px;
   }
 
   .services-intro {
