@@ -97,6 +97,23 @@ motionPreference.addEventListener("change", () => {
 });
 updateBanner();
 
+const newsTrack = document.querySelector("#news-track");
+const previousNews = document.querySelector("[data-news-prev]");
+const nextNews = document.querySelector("[data-news-next]");
+function updateNewsControls() {
+  previousNews.disabled = newsTrack.scrollLeft <= 2;
+  nextNews.disabled = newsTrack.scrollLeft >= newsTrack.scrollWidth - newsTrack.clientWidth - 2;
+}
+function scrollNews(direction) {
+  const step = newsTrack.querySelector(".update-card").getBoundingClientRect().width + parseFloat(getComputedStyle(newsTrack).columnGap);
+  newsTrack.scrollBy({ left: direction * step, behavior: motionPreference.matches ? "instant" : "smooth" });
+}
+previousNews.addEventListener("click", () => scrollNews(-1));
+nextNews.addEventListener("click", () => scrollNews(1));
+newsTrack.addEventListener("scroll", updateNewsControls, { passive: true });
+window.addEventListener("resize", updateNewsControls);
+updateNewsControls();
+
 const videoTrack = document.querySelector(".video-track");
 const previousVideos = document.querySelector("[data-video-prev]");
 const nextVideos = document.querySelector("[data-video-next]");

@@ -130,10 +130,14 @@
             <p class="section-kicker">What is happening</p>
             <h2 id="updates-title">Latest updates</h2>
           </div>
-          <a class="updates-all-link" href="#">View all news <i data-lucide="arrow-right"></i></a>
+          <div class="updates-controls">
+            <a class="updates-all-link" href="https://cmadamhoh.gov/news1/">View all news <i data-lucide="arrow-right"></i></a>
+            <button class="icon-control" type="button" data-news-prev aria-controls="news-track" aria-label="Previous updates" title="Previous updates"><i data-lucide="arrow-left"></i></button>
+            <button class="icon-control" type="button" data-news-next aria-controls="news-track" aria-label="Older updates" title="Older updates"><i data-lucide="arrow-right"></i></button>
+          </div>
         </div>
 
-        <div class="updates-grid">
+        <div class="updates-grid" id="news-track" tabindex="0" role="region" aria-label="Latest updates and previous news stories">
           <article class="update-card update-card-meeting">
             <p class="update-type">Community meeting</p>
             <h3>September Board Meeting</h3>
@@ -157,6 +161,30 @@
             <h3>Now Hiring: Coleman Health Services</h3>
             <p class="update-summary">Our contracted provider is seeking applicants for several roles supporting behavioral health, crisis services, case management, nursing, counseling, and administration.</p>
             <a class="update-action" href="#">View job openings <i data-lucide="arrow-up-right"></i></a>
+          </article>
+          <article class="update-card update-card-story">
+            <img class="update-image" src="https://cmadamhoh.gov/wp-content/uploads/2023/06/Amplified-Expressions-of-our-Journey.png" alt="" loading="lazy" width="600" height="400" />
+            <p class="update-type">News &amp; events / <time datetime="2026-08-13">August 13, 2026</time></p>
+            <h3>Amplified Expressions of Our Journey</h3>
+            <a class="update-action" href="https://cmadamhoh.gov/amplified-expressions-of-our-journey/" aria-label="Read Amplified Expressions of Our Journey">Read story <i data-lucide="arrow-up-right"></i></a>
+          </article>
+          <article class="update-card update-card-story">
+            <img class="update-image" src="https://cmadamhoh.gov/wp-content/uploads/2025/06/Marion-County-SPC-Walk.png" alt="" loading="lazy" width="600" height="400" />
+            <p class="update-type">News &amp; events / <time datetime="2026-08-13">August 13, 2026</time></p>
+            <h3>Marion County Suicide Prevention Walk</h3>
+            <a class="update-action" href="https://cmadamhoh.gov/marion-county-suicide-prevention-walk-2/" aria-label="Read Marion County Suicide Prevention Walk">Read story <i data-lucide="arrow-up-right"></i></a>
+          </article>
+          <article class="update-card update-card-story">
+            <img class="update-image" src="https://cmadamhoh.gov/wp-content/uploads/2025/06/Crawford-County-Suicide-Prevention-Walk.png" alt="" loading="lazy" width="600" height="400" />
+            <p class="update-type">News &amp; events / <time datetime="2026-08-13">August 13, 2026</time></p>
+            <h3>Crawford County Suicide Prevention Walk</h3>
+            <a class="update-action" href="https://cmadamhoh.gov/crawford-county-suicide-prevention-walk-3/" aria-label="Read Crawford County Suicide Prevention Walk">Read story <i data-lucide="arrow-up-right"></i></a>
+          </article>
+          <article class="update-card update-card-story">
+            <img class="update-image" src="https://cmadamhoh.gov/wp-content/uploads/2026/08/Paint-the-Town-Purple-Thumbnail.png" alt="" loading="lazy" width="600" height="400" />
+            <p class="update-type">News &amp; events / <time datetime="2026-08-13">August 13, 2026</time></p>
+            <h3>Paint the Town Purple (Crawford)</h3>
+            <a class="update-action" href="https://cmadamhoh.gov/paint-the-town-purple-crawford/" aria-label="Read Paint the Town Purple Crawford">Read story <i data-lucide="arrow-up-right"></i></a>
           </article>
         </div>
       </section>
