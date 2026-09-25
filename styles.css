@@ -358,6 +358,7 @@ h1 {
 
 .about {
   position: relative;
+  z-index: 1;
   padding: 64px clamp(24px, 5vw, 84px) 68px;
   border-radius: 0 0 52px 52px;
   background: #191d20;
@@ -426,6 +427,142 @@ h1 {
 
   .about h2 {
     font-size: 30px;
+  }
+}
+
+.resource-band {
+  position: relative;
+  margin-top: -52px;
+  padding: 108px clamp(24px, 5vw, 84px) 60px;
+  border-radius: 0 0 52px 52px;
+  background: #edf4fa;
+  color: #10243b;
+}
+
+.resource-band-inner {
+  width: min(1240px, 100%);
+  margin: 0 auto;
+}
+
+.resource-partners {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
+}
+
+.resource-partner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.resource-logo {
+  display: flex;
+  align-items: center;
+  height: 116px;
+  width: 100%;
+  margin: 0 0 24px;
+}
+
+.resource-logo img {
+  display: block;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.resource-partner p,
+.resource-local p {
+  margin: 0 0 24px;
+  color: #45596b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.resource-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  min-height: 46px;
+  margin-top: auto;
+  padding: 12px 20px;
+  border-radius: 28px;
+  background: var(--adamh-blue);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.resource-button svg {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.resource-button:hover {
+  background: #183d84;
+}
+
+.resource-button:focus-visible {
+  outline: 3px solid #10243b;
+  outline-offset: 4px;
+}
+
+.resource-local {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 32px;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid #cbd8e7;
+}
+
+.resource-local h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.resource-local p {
+  max-width: 48ch;
+  margin: 0;
+}
+
+.resource-local-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 800px) {
+  .resource-partners,
+  .resource-local {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .resource-partner + .resource-partner {
+    padding-top: 28px;
+    border-top: 1px solid #cbd8e7;
+  }
+
+  .resource-local-links {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .resource-band {
+    margin-top: -30px;
+    padding: 66px 20px 40px;
+    border-radius: 0 0 30px 30px;
   }
 }
 
