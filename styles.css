@@ -624,9 +624,14 @@ h1 {
 }
 
 .update-card-meeting,
-.update-card-prevention,
 .update-card-hiring {
   background: #fff9df;
+}
+
+.update-card-prevention {
+  background: var(--surface-soft);
+  border-color: var(--border-light);
+  border-top-color: var(--adamh-blue);
 }
 
 .update-type {
