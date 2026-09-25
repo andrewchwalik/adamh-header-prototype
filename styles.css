@@ -37,6 +37,7 @@ a {
 
 .hero {
   min-height: min(810px, 100vh);
+  background: #191d20;
 }
 
 .hero-media {
@@ -356,8 +357,11 @@ h1 {
 }
 
 .about {
-  padding: 76px clamp(24px, 5vw, 84px) 56px;
-  background: #fff;
+  position: relative;
+  padding: 64px clamp(24px, 5vw, 84px) 68px;
+  border-radius: 0 0 52px 52px;
+  background: #191d20;
+  color: #fff;
 }
 
 .about-inner {
@@ -366,18 +370,17 @@ h1 {
   gap: 64px;
   width: min(1240px, 100%);
   margin: 0 auto;
-  padding-bottom: 48px;
-  border-bottom: 1px solid #dce4ee;
 }
 
 .about-heading .section-kicker {
   margin: 0 0 16px;
+  color: var(--adamh-yellow);
   letter-spacing: 0;
 }
 
 .about h2 {
   margin: 0;
-  color: #10243b;
+  color: #fff;
   font-size: 38px;
   line-height: 1.15;
   overflow-wrap: break-word;
@@ -388,21 +391,21 @@ h1 {
   margin: 22px 0 0;
   padding-left: 16px;
   border-left: 3px solid var(--adamh-yellow);
-  color: #51606f;
+  color: #cbd0d5;
   font-size: 16px;
   line-height: 1.6;
 }
 
 .about-mission h3 {
   margin: 0 0 14px;
-  color: var(--adamh-blue);
+  color: var(--adamh-yellow);
   font-size: 18px;
   line-height: 1.4;
 }
 
 .about-mission p {
   margin: 0;
-  color: #51606f;
+  color: #dce0e3;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.75;
@@ -417,11 +420,8 @@ h1 {
 
 @media (max-width: 640px) {
   .about {
-    padding: 48px 20px 12px;
-  }
-
-  .about-inner {
-    padding-bottom: 36px;
+    padding: 40px 20px 44px;
+    border-radius: 0 0 30px 30px;
   }
 
   .about h2 {
