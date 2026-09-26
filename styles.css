@@ -234,9 +234,10 @@ a {
 .eyebrow {
   margin: 0 0 16px;
   color: var(--adamh-yellow);
-  font-size: clamp(15px, 1.45vw, 19px);
+  font-size: 28px;
+  line-height: 1.25;
   font-weight: 900;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -426,6 +427,10 @@ h1 {
 }
 
 @media (max-width: 640px) {
+  .eyebrow {
+    font-size: 22px;
+  }
+
   .about {
     padding: 40px 20px 44px;
     border-radius: 0 0 30px 30px;
